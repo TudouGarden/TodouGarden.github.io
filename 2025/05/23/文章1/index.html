@@ -10,7 +10,7 @@
     
     
     
-    <title>Hexo</title>
+    <title>Home Assistant部署虚拟机教程 | Hexo</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -137,6 +137,10 @@
                             <a href="/categories/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/">我的第一条博客</a>
                         </li>
                         
+                        <li>
+                            <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%83%A8%E7%BD%B2-Home-Assistant/">虚拟机部署 Home Assistant</a>
+                        </li>
+                        
                         
                         
                     </ul>
@@ -157,6 +161,10 @@
                         
                         <li>
                             <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/">个人的第一条博客</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/Home-Assistant/">Home Assistant</a>
                         </li>
                         
                         
@@ -188,16 +196,23 @@
         <i class="fa fa-home"></i>
         <a href="http://example.com">Hexo</a>
         >
-        <span></span>
+        <span>Home Assistant部署虚拟机教程</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2025/05/23/%E6%96%87%E7%AB%A01/"></a>
+                <a href="/2025/05/23/%E6%96%87%E7%AB%A01/">Home Assistant部署虚拟机教程</a>
             </h1>
         </div>
         <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Home-Assistant/">Home Assistant</a>
+                
+            </span>
             
             <span class="label label-gal">
                 <i class="fa fa-calendar"></i> 2025-05-23
@@ -214,13 +229,18 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2025/05/23/%E6%96%87%E7%AB%A01/"></a>
+                    <a href="/2025/05/23/%E6%96%87%E7%AB%A01/">Home Assistant部署虚拟机教程</a>
                 </h4>
             </div>
             <p>
                 <i class="fa fa-calendar"></i> 2025-05-23
             </p>
             <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Home-Assistant/">Home Assistant</a>
+                
                 
                 
                 <i class="fa fa-eye"></i>
@@ -229,27 +249,24 @@
         </center>
     </div>
     <div class="content-article">
-        <hr>
-<p>title: Home Assistant部署虚拟机教程<br>tags:</p>
-<ul>
-<li>Home Assistant<br>categories:</li>
-<li>虚拟机部署 Home Assistant<br>首先：</li>
-</ul>
-<ol>
-<li>新建虚拟机选择“典型”，然后点击“下一步”。</li>
-<li>选择“稍后安装操作系统”。</li>
-<li>选择下面这张图片的方式：</li>
-</ol>
+        <h2 id="首先："><a href="#首先：" class="headerlink" title="首先："></a>首先：</h2><ol>
+<li><p>新建虚拟机选择“典型”，然后点击“下一步”。</p>
+</li>
+<li><p>选择“稍后安装操作系统”。</p>
+</li>
+<li><p>选择下面这张图片的方式：</p>
 <p><img src="/image/%E8%99%9A%E6%8B%9F%E6%9C%BA.png" alt="虚拟机配置示意图"></p>
-<ol start="4">
-<li>接下来自己选择一个存放位置，选择“单个文件”（不要选择拆分文件），磁盘大小建议20G左右。</li>
-<li>点击“下一步”，然后点击“完成”。</li>
+</li>
+<li><p>接下来自己选择一个存放位置，选择“单个文件”（不要选择拆分文件），磁盘大小建议 20G 左右。</p>
+</li>
+<li><p>点击“下一步”，然后点击“完成”。</p>
+</li>
 </ol>
-<p>创建完成后：</p>
-<ul>
+<hr>
+<h2 id="创建完成后："><a href="#创建完成后：" class="headerlink" title="创建完成后："></a>创建完成后：</h2><ul>
 <li>找到我们的虚拟机文件夹，将里面后缀为 <code>.vmdk</code> 的文件删除。</li>
-<li>将下载的 <code>vmdk</code> 文件放进去，并将名称改成与原来相同。</li>
-<li>右键该文件，用记事本打开，在第一行敲一个回车，添加一行内容：firmware &#x3D; “efi”<br>之后运行虚拟机即可（我用的是 VMware）。</li>
+<li>将下载的 <code>.vmdk</code> 文件放进去，并将名称改成与原来相同。</li>
+<li>右键该文件，用记事本打开，在第一行敲一个回车，添加一行内容： firmware &#x3D; “efi” 之后运行虚拟机即可（我用的是 VMware）。</li>
 </ul>
 
     </div>
@@ -332,7 +349,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/05/23/%E6%96%87%E7%AB%A01/"></a>
+                    <a href="/2025/05/23/%E6%96%87%E7%AB%A01/">Home Assistant部署虚拟机教程</a>
                 </span>
             </li>
             
@@ -360,7 +377,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2025/05/23/%E6%96%87%E7%AB%A01/"></a>
+                    <a href="/2025/05/23/%E6%96%87%E7%AB%A01/">Home Assistant部署虚拟机教程</a>
                 </span>
             </li>
             
@@ -393,7 +410,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 15.73772439807415px;" class="tag-cloud-link">个人的第一条博客</a>
+    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 17.25267041197641px;" class="tag-cloud-link">个人的第一条博客</a>
+    
+    <a href="/tags/Home-Assistant/" style="font-size: 15.339145105297522px;" class="tag-cloud-link">Home Assistant</a>
     
 </div>
                 
@@ -418,15 +437,15 @@
                 <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
     
     <li>
-        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+        <a href="https://github.com/TudouGarden" target="_blank">Github</a>
     </li>
     
     <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+        <a href="https://www.bing.com/" target="_blank">百度</a>
     </li>
     
     <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+        <a href="https://www.zhihu.com/" target="_blank">知乎</a>
     </li>
     
 </div>
