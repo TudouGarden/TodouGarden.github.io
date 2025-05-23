@@ -234,7 +234,7 @@
 <hr>
 <p>联系方式：</p>
 <ul>
-<li>邮箱: <a href="mailto:&#x32;&#53;&#52;&#x38;&#48;&#x35;&#52;&#x36;&#48;&#57;&#x40;&#x71;&#x71;&#x2e;&#99;&#111;&#x6d;">2548054609@qq.com</a></li>
+<li>邮箱: <a href="mailto:&#x32;&#53;&#52;&#x38;&#48;&#53;&#52;&#54;&#x30;&#57;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;">2548054609@qq.com</a></li>
 <li>GitHub: <a target="_blank" rel="noopener" href="https://github.com/TudouGarden">https://github.com/TudouGarden</a></li>
 </ul>
 <p><strong>祝你在这里有所收获，快乐学习！</strong></p>
@@ -243,6 +243,22 @@
 </article>
 
 
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: '个人主页',          // 用文章标题作为唯一 ID
+    owner: 'TudouGarden',             // 你的 GitHub 用户名
+    repo: 'TodouGarden.github.io',   // 你的仓库名
+    oauth: {
+      client_id: 'Ov23liKOASDCR7hojw2b',       // 你的 client_id
+      client_secret: 'b74a6ebfcb95e33c13d9cbb731f0e85aca8e6713' // 你的 client_secret
+    }
+  });
+  gitment.render('comments-template');
+</script>
 
 
 
@@ -381,9 +397,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 8.45205099827865px;" class="tag-cloud-link">个人的第一条博客</a>
+    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 8.921523451071355px;" class="tag-cloud-link">个人的第一条博客</a>
     
-    <a href="/tags/Home-Assistant/" style="font-size: 14.508659144294658px;" class="tag-cloud-link">Home Assistant</a>
+    <a href="/tags/Home-Assistant/" style="font-size: 18.648591343102012px;" class="tag-cloud-link">Home Assistant</a>
     
 </div>
                 
@@ -502,6 +518,30 @@
 
 <script src="/js/comment/leancloud.js"></script>
 
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Fri May 23 2025 16:26:17 GMT+0800'
+      window.commentConfig.owner = 'TudouGarden'
+      window.commentConfig.repo = 'TodouGarden.github.io'
+      window.commentConfig.client_id = 'Ov23liKOASDCR7hojw2b'
+      window.commentConfig.client_secret = 'b74a6ebfcb95e33c13d9cbb731f0e85aca8e6713'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Fri May 23 2025 16:26:17 GMT+0800',
+        owner: 'TudouGarden',
+        repo: 'TodouGarden.github.io',
+        client_id: 'Ov23liKOASDCR7hojw2b',
+        client_secret: 'b74a6ebfcb95e33c13d9cbb731f0e85aca8e6713',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
