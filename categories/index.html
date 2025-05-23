@@ -194,8 +194,35 @@
 
 
 <article class="article well article-body" id="article">
-    <!-- 省略你的文章主体HTML代码，保持不变 -->
-    ...
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/categories/index.html">分类</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2025-05-23
+            </span>
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/categories/index.html">分类</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2025-05-23
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        
+    </div>
 </article>
 
 
@@ -204,7 +231,7 @@
 <div id="comments-template"></div>
 
 <!-- Gitment 样式（本地引用） -->
-<link rel="stylesheet" href="/css/default.css">
+<link rel="stylesheet" href="/css/gitment.default.css">
 
 <!-- Gitment 脚本（本地引用） -->
 <script src="/js/gitment.browser.js"></script>
@@ -212,11 +239,11 @@
 <script>
   var gitment = new Gitment({
     id: '分类',          // 用文章标题作为唯一 ID
-    owner: 'TudouGarden',             // 你的 GitHub 用户名
-    repo: 'TodouGarden.github.io',   // 你的仓库名
+    owner: 'TudouGarden',             // GitHub 用户名
+    repo: 'TodouGarden.github.io',    // GitHub 仓库名
     oauth: {
-      client_id: 'Ov23liKOASDCR7hojw2b',       // 你的 client_id
-      client_secret: 'b74a6ebfcb95e33c13d9cbb731f0e85aca8e6713' // 你的 client_secret
+      client_id: 'Ov23liKOASDCR7hojw2b',       // GitHub OAuth App 的 client_id
+      client_secret: 'b74a6ebfcb95e33c13d9cbb731f0e85aca8e6713' // client_secret
     }
   });
   gitment.render('comments-template');
@@ -359,9 +386,9 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 10.867637281400144px;" class="tag-cloud-link">个人的第一条博客</a>
+    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 10.191599136005223px;" class="tag-cloud-link">个人的第一条博客</a>
     
-    <a href="/tags/Home-Assistant/" style="font-size: 19.15121403425769px;" class="tag-cloud-link">Home Assistant</a>
+    <a href="/tags/Home-Assistant/" style="font-size: 18.542354581858255px;" class="tag-cloud-link">Home Assistant</a>
     
 </div>
                 
