@@ -86,20 +86,19 @@
                     aria-expanded="false">
                 <span class="fa fa-lg fa-reorder"></span>
             </button>
-            <a href="http://example.com">
+            <a href="https://github.com/TudouGarden" target="_blank" rel="noopener noreferrer">
                 
+                <!-- 这里background使用imgs/${logo_image}(路径文件名) -->
                 <style>
                     #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                        width: 200px;
+                        height: 50px;
+                        display: block;
+                        background: url('/imgs/1.png') no-repeat;
                     }
                 </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Hexo</div>
+                    
+                <div class="navbar-brand"></div>
                 
             </a>
         </div>
@@ -125,7 +124,6 @@
                 
                 
                 <li class="dropdown">
-                    <!-- TODO 添加hover dropdown效果 -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
@@ -155,7 +153,6 @@
                 
                 
                 <li class="dropdown">
-                    <!-- TODO 添加hover dropdown效果 -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
@@ -194,6 +191,7 @@
         </div>
     </div>
 </header>
+
     <div id="gal-body">
         <div class="container">
             <div class="row">
@@ -235,18 +233,76 @@
 </article>
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
-    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
-<aside id="sidebar-search">
-    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <form class="form-inline clearfix" id="search-form" method="get"
-              action="/search/index.html">
-            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
-            <button class="btn btn-danger btn-gal" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
-    </div>
-</aside>
+    <div id="sidebar-search" style="margin-top: 30px;">
+  <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+    <form class="form-inline clearfix" id="search-form" method="get" action="/search/" onsubmit="return false;">
+      <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off" style="width: 80%;">
+      <button class="btn btn-danger btn-gal" id="searchButton" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 20px;">
+  <div id="search-results"></div>
+</div>
+
+<script>
+  let posts = [];
+
+  function loadSearchIndex() {
+    fetch('/search.xml').then(res => res.text()).then(str => {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(str, "application/xml");
+      const items = xmlDoc.querySelectorAll('entry');
+      posts = [];
+      items.forEach(item => {
+        const title = item.querySelector('title').textContent;
+        const url = item.querySelector('url').textContent;
+        const content = item.querySelector('content').textContent;
+        posts.push({ title, url, content });
+      });
+    });
+  }
+
+  function searchPosts(keyword) {
+    keyword = keyword.trim().toLowerCase();
+    if (!keyword) return [];
+    return posts.filter(post =>
+      post.title.toLowerCase().includes(keyword) ||
+      post.content.toLowerCase().includes(keyword)
+    );
+  }
+
+  function renderResults(results, keyword) {
+    const container = document.getElementById('search-results');
+    container.innerHTML = '';
+    if (results.length === 0) {
+      container.innerHTML = `<p>没有找到与 "<strong>${keyword}</strong>" 相关的文章。</p>`;
+      return;
+    }
+    const ul = document.createElement('ul');
+    ul.classList.add('list-group');
+    results.forEach(post => {
+      const li = document.createElement('li');
+      li.classList.add('list-group-item');
+      li.innerHTML = `<a href="${post.url}">${post.title}</a>`;
+      ul.appendChild(li);
+    });
+    container.appendChild(ul);
+  }
+
+  document.getElementById('searchButton').onclick = () => {
+    const keyword = document.getElementById('searchInput').value;
+    const results = searchPosts(keyword);
+    renderResults(results, keyword);
+  };
+
+  // 页面加载后预加载搜索索引
+  loadSearchIndex();
+</script>
+
     <aside id="sidebar-author">
     <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
         <div class="panel-heading" style="text-align: center">
@@ -380,11 +436,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 15.85459143514242px;" class="tag-cloud-link">个人的第一条博客</a>
+    <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E6%9D%A1%E5%8D%9A%E5%AE%A2/" style="font-size: 9.950270123660811px;" class="tag-cloud-link">个人的第一条博客</a>
     
-    <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%AE%80%E4%BB%8B/" style="font-size: 10.618039682009577px;" class="tag-cloud-link">高等数学简介</a>
+    <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%AE%80%E4%BB%8B/" style="font-size: 18.686327633394104px;" class="tag-cloud-link">高等数学简介</a>
     
-    <a href="/tags/Home-Assistant/" style="font-size: 9.236353215727593px;" class="tag-cloud-link">Home Assistant</a>
+    <a href="/tags/Home-Assistant/" style="font-size: 15.55571759113756px;" class="tag-cloud-link">Home Assistant</a>
     
 </div>
                 
@@ -432,14 +488,16 @@
     </div>
     <footer id="gal-footer">
     <div class="container">
-        Copyright © 2018 John Doe Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+        This blog belongs to WYZ. For any issues, please visit
+        <a href="https://github.com/TudouGarden" target="_blank">https://github.com/TudouGarden</a>
     </div>
 </footer>
 
-<!-- 回到顶端 -->
+<!-- Back to top -->
 <div id="gal-gotop">
     <i class="fa fa-angle-up"></i>
 </div>
+
 </body>
 
 <script src="/js/activate-power-mode.js"></script>
