@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>打开博客之门</title>
+    <url>/2025/05/23/hello-world/</url>
+    <content><![CDATA[我是大二的一名物联网工程专业的学生，，这是我的个人第一条博客。
+]]></content>
+      <categories>
+        <category>我的第一条博客</category>
+      </categories>
+      <tags>
+        <tag>个人的第一条博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Home Assistant部署虚拟机教程</title>
     <url>/2025/05/23/%E6%96%87%E7%AB%A01/</url>
     <content><![CDATA[首先：
@@ -28,18 +40,6 @@
       </categories>
       <tags>
         <tag>Home Assistant</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打开博客之门</title>
-    <url>/2025/05/23/hello-world/</url>
-    <content><![CDATA[我是大二的一名物联网工程专业的学生，，这是我的个人第一条博客。
-]]></content>
-      <categories>
-        <category>我的第一条博客</category>
-      </categories>
-      <tags>
-        <tag>个人的第一条博客</tag>
       </tags>
   </entry>
   <entry>
