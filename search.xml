@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>打开博客之门</title>
-    <url>/2025/05/23/hello-world/</url>
-    <content><![CDATA[我是大二的一名物联网工程专业的学生，，这是我的个人第一条博客。
-]]></content>
-      <categories>
-        <category>我的第一条博客</category>
-      </categories>
-      <tags>
-        <tag>个人的第一条博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>高等数学简介</title>
-    <url>/2025/05/23/%E6%96%87%E7%AB%A02/</url>
-    <content><![CDATA[高等数学简介高等数学是大学理工科专业的基础课程之一，主要涵盖微积分、线性代数、常微分方程等内容。它不仅为学生打下扎实的数学基础，还为后续学习工程学、物理学、经济学等专业知识提供必要的数学工具。
-微积分部分重点讲解函数极限、导数与微分、积分及其应用，帮助学生理解变化率和累积量的概念；线性代数则研究向量空间、矩阵运算和线性方程组，为解决多元变量问题奠定基础；常微分方程课程则着重于描述和分析自然界及工程技术中的动态过程。
-掌握高等数学，不仅能提升学生的逻辑思维和抽象分析能力，还能为科学研究和实际应用提供有力支持。希望通过学习本课程，大家能够扎实掌握数学理论，培养严谨的科学态度。
-]]></content>
-      <categories>
-        <category>高等数学</category>
-      </categories>
-      <tags>
-        <tag>高等数学简介</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Home Assistant部署虚拟机教程</title>
     <url>/2025/05/23/%E6%96%87%E7%AB%A01/</url>
     <content><![CDATA[首先：
@@ -54,6 +28,32 @@
       </categories>
       <tags>
         <tag>Home Assistant</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>打开博客之门</title>
+    <url>/2025/05/23/hello-world/</url>
+    <content><![CDATA[我是大二的一名物联网工程专业的学生，，这是我的个人第一条博客。
+]]></content>
+      <categories>
+        <category>我的第一条博客</category>
+      </categories>
+      <tags>
+        <tag>个人的第一条博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>高等数学简介</title>
+    <url>/2025/05/23/%E6%96%87%E7%AB%A02/</url>
+    <content><![CDATA[高等数学简介高等数学是大学理工科专业的基础课程之一，主要涵盖微积分、线性代数、常微分方程等内容。它不仅为学生打下扎实的数学基础，还为后续学习工程学、物理学、经济学等专业知识提供必要的数学工具。
+微积分部分重点讲解函数极限、导数与微分、积分及其应用，帮助学生理解变化率和累积量的概念；线性代数则研究向量空间、矩阵运算和线性方程组，为解决多元变量问题奠定基础；常微分方程课程则着重于描述和分析自然界及工程技术中的动态过程。
+掌握高等数学，不仅能提升学生的逻辑思维和抽象分析能力，还能为科学研究和实际应用提供有力支持。希望通过学习本课程，大家能够扎实掌握数学理论，培养严谨的科学态度。
+]]></content>
+      <categories>
+        <category>高等数学</category>
+      </categories>
+      <tags>
+        <tag>高等数学简介</tag>
       </tags>
   </entry>
 </search>
